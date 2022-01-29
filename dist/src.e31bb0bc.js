@@ -2265,7 +2265,7 @@ const templateFunction = _handlebars.default.template({
       return undefined;
     };
 
-    return "<li class=\"movie-item\">\r\n    <a href=\"#\" class=\"movie-link\">\r\n        <img src=\"https://image.tmdb.org/t/p/original" + alias4((helper = (helper = lookupProperty(helpers, "poster_path") || (depth0 != null ? lookupProperty(depth0, "poster_path") : depth0)) != null ? helper : alias2, typeof helper === alias3 ? helper.call(alias1, {
+    return "<li class=\"movie-item\">\n    <a href=\"#\" class=\"movie-link\">\n        <img src=\"https://image.tmdb.org/t/p/original" + alias4((helper = (helper = lookupProperty(helpers, "poster_path") || (depth0 != null ? lookupProperty(depth0, "poster_path") : depth0)) != null ? helper : alias2, typeof helper === alias3 ? helper.call(alias1, {
       "name": "poster_path",
       "hash": {},
       "data": data,
@@ -2321,7 +2321,7 @@ const templateFunction = _handlebars.default.template({
           "column": 222
         }
       }
-    }) : helper)) + " 2x\" class=\"movie-img\" >\r\n        <p class=\"movie-name\">" + alias4((helper = (helper = lookupProperty(helpers, "title") || (depth0 != null ? lookupProperty(depth0, "title") : depth0)) != null ? helper : alias2, typeof helper === alias3 ? helper.call(alias1, {
+    }) : helper)) + " 2x\" class=\"movie-img\" >\n        <p class=\"movie-name\">" + alias4((helper = (helper = lookupProperty(helpers, "title") || (depth0 != null ? lookupProperty(depth0, "title") : depth0)) != null ? helper : alias2, typeof helper === alias3 ? helper.call(alias1, {
       "name": "title",
       "hash": {},
       "data": data,
@@ -2335,7 +2335,7 @@ const templateFunction = _handlebars.default.template({
           "column": 39
         }
       }
-    }) : helper)) + "</p>\r\n        <p class=\"genre\" data-genres=" + alias4((helper = (helper = lookupProperty(helpers, "genre_ids") || (depth0 != null ? lookupProperty(depth0, "genre_ids") : depth0)) != null ? helper : alias2, typeof helper === alias3 ? helper.call(alias1, {
+    }) : helper)) + "</p>\n        <p class=\"genre\" data-genres=" + alias4((helper = (helper = lookupProperty(helpers, "genre_ids") || (depth0 != null ? lookupProperty(depth0, "genre_ids") : depth0)) != null ? helper : alias2, typeof helper === alias3 ? helper.call(alias1, {
       "name": "genre_ids",
       "hash": {},
       "data": data,
@@ -2349,7 +2349,7 @@ const templateFunction = _handlebars.default.template({
           "column": 50
         }
       }
-    }) : helper)) + "></p>\r\n        </a></li>\r\n";
+    }) : helper)) + "></p>\n        </a></li>\n";
   },
   "compiler": [8, ">= 4.3.0"],
   "main": function (container, depth0, helpers, partials, data) {
@@ -2820,7 +2820,7 @@ function genresCheck(ids) {
 
     for (let i of parsedStorage) {
       if (genreData.includes(i.id.toString())) {
-        item.insertAdjacentHTML('beforebegin', `${i.name};`);
+        item.textContent += `${i.name};`;
       }
     }
   }
@@ -2853,7 +2853,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59740" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51085" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
